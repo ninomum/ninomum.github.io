@@ -1,0 +1,24 @@
+
+body {
+    background-color: #CCE8CF;
+    color: #000;
+    font-family: Lato;    
+	position: relative;
+}
+#navigation {
+    font-size: 1.2rem;
+	position: absolute;
+}
+#navigation li {
+    display: inline-block;
+    height: 45px;
+    padding: 5px 10px;
+    transition: all 1s ease 0s;
+}
+#navigation li:hover::before { content: "\5B"; left: -20px; }  
+#navigation li:hover::after { content: "\5D"; right: -20px; }  
+#navigation li a {
+    color: #07A4D3;
+    text-decoration: none;
+}
+#navigation li a:hover{color: green;}
