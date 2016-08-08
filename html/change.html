@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>变换</title>
+        <script type="text/javascript">
+                        window.onload = function()
+                        {
+                                window.setInterval(function()
+                                {
+                                        var canvas = document.getElementById("canvas");
+                                        var context = canvas.getContext("2d");
+                                        var n = 0;
+                                        var dx = parseInt(Math.random()*(600 - 0 + 1) + 0);
+                                        var dy = parseInt(Math.random()*(600 - 0 + 1) + 0);
+                                        var s = parseInt(Math.random()*(300 - 30 + 1) + 30);
+                                        var dig = Math.PI / 15 * 11;
+                                        context.fillStyle = "#eee";
+                                        context.fillRect(0, 0, 600, 600);
+                                        context.beginPath();
+                                        context.fillStyle = toRGB(parseInt(Math.random()*(255 - 0 + 1) + 0),parseInt(Math.random()*(255 - 0 + 1) + 0),parseInt(Math.random()*(255 - 0 + 1) + 0));
+                                        context.strokeStyle = toRGB(parseInt(Math.random()*(255 - 0 + 1) + 0),parseInt(Math.random()*(255 - 0 + 1) + 0),parseInt(Math.random()*(255 - 0 + 1) + 0));
+                                        for(var i = 0; i < 30; i++)
+                                        {
+                                                var x = Math.sin(i * dig);
+                                                var y = Math.cos(i * dig);
+                                                context.lineTo(dx + x * s, dy + y * s);
+                                        }
+                                        context.closePath();
+                                        context.fill();
+                                        context.stroke();
+                                },1000); 
+                        }
+                        
+                        function addZero(string)
+                        {
+                                return string.length == 2 ? string : '0' + string;
+                        }
+
+                        function toRGB(redValue, greenValue, blueValue)
+                        {
+                                var 
+                                        rgbR = addZero(redValue.toString(16), 2),
+                                        rgbG = addZero(greenValue.toString(16), 2),
+                                        rgbB = addZero(blueValue.toString(16), 2);
+                                        
+                                var rgb = "#" + rgbR + rgbG +rgbB;
+                                return rgb;
+                        }
+        </script>
+    </head>
+    
+    <body>
+            <canvas id="canvas" width="600" height="600"></canvas>
+    </body>
+</html>
