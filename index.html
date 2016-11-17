@@ -8,9 +8,10 @@
 <script src="js/jquery-3.1.0.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-$(document).ready(function(){
-
-});
+	$(document).ready(function(e) {
+		//首页轮播
+        xlc.tabList ("#js_diannao" , "mouseover" , "focus" , true , 3000);
+    });
 </script>
 
 </head>
@@ -55,7 +56,23 @@ $(document).ready(function(){
 	<img src="images/manteng.png" width="410" height="152" />
 </div>
 
-
+<div class="container container_geban">
+	<div class="container container_indexmain">
+    	<div class="diannao js_diannao">
+        	<ul class="lunbo">
+            	<li style="background-image:url(images/index/l_1.jpg)"></li>
+                <li style="background-image:url(images/index/l_2.jpg)"></li>
+                <li style="background-image:url(images/index/l_3.jpg)"></li>
+            </ul>
+            <ul class="lunbo_tip">
+            	<li class="focus"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <img src="images/index/diannao.png" width="417" height="305" />
+        </div>
+    </div>
+</div>
 
 
 

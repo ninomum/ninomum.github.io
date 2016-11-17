@@ -18,6 +18,22 @@ body{background:url(../images/bg_body.png) left top repeat-x #f0f0f0}
 .icon_nav_3{margin:26px 0 0 0;}
 .icon_nav_4{margin:37px 0 0 0;}
 
+/*首页隔板*/
+.container_geban{width:934px;height:380px;background:url(../images/bg_geban.png) center bottom no-repeat;margin:0 auto;}
+.container_indexmain{width:100%;height:100%;}
+.diannao{position:absolute;left:50%;margin-left:-210px;bottom:52px;}
+
+/*首页轮播*/
+.lunbo_tip , .lunbo , .lunbo li , .lunbo li a{width:349px;height:197px;}
+.lunbo ,  .lunbo_tip {position:absolute;z-index:1;left:34px;}
+.lunbo{top:16px;}
+.lunbo li {position:absolute;left:0;top:0;text-align:center;overflow:hidden;}
+
+.lunbo_tip{bottom:95px;height:0px;z-index:3}
+.lunbo_tip , .lunbo_tip li{text-align:center;}
+.lunbo_tip li{display:inline-block;width:8px ;height:8px;background:#fff;border-radius:100px;cursor:pointer;background-position:center center;background-repeat:no-repeat;}
+.lunbo_tip .focus{background:#ff8b00;}
+
 
 @keyframes choose
 {
