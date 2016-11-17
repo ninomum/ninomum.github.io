@@ -1,24 +1,33 @@
 
-body {
-    background-color: #CCE8CF;
-    color: #000;
-    font-family: Lato;    
-	position: relative;
+
+body{background:url(../images/bg_body.png) left top repeat-x #f0f0f0}
+.container{position:relative;}
+.container_nav{width:1021px;height:97px;margin:160px auto 30px auto;background:url(../images/bg_nav.png) center center no-repeat;}
+ 
+.logo{position:absolute;top:-122px;left:47px;display:block;}
+.logo_txt{font-size:20px;color:#5f431b;text-shadow:0px 1px 0px #e1caae;display:block;height:50px;line-height:50px;font-weight:bold;text-align:center;ma}
+ 
+.nav{float:left;margin:-126px 0 0 340px;}
+.nav li{float:left;text-align:center;height:195px;position:relative;}
+.nav_txt{font-size:16px;color:#5f431b;text-shadow:0px 1px 0px #e1caae;display:block;height:40px;line-height:40px;font-weight:bold;}
+.nav .focus , .nav_txt:hover ,.logo_txt:hover , nav li:hover .nav_txt{color:#35230a;}
+.navItem_1{margin-right:60px;}
+.navItem_2{margin-right:130px;}
+.navItem_3{margin-right:70px;}
+.icon_nav_2{margin:19px 0 0 0;}
+.icon_nav_3{margin:26px 0 0 0;}
+.icon_nav_4{margin:37px 0 0 0;}
+
+
+.choose{width:66px;height:48px;position:absolute;margin:-3px 0 0 117px;background:url(../images/choose.png) center center no-repeat;
+	transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	animation: choose infinite alternate 0.7s ease-in-out;
+	-moz-animation: choose infinite alternate 0.7s ease-in-out;
+	-webkit-animation: choose infinite alternate 0.7s ease-in-out;
+	-o-animation: choose infinite alternate 0.7s ease-in-out;
 }
-#navigation {
-    font-size: 1.2rem;
-	position: absolute;
-}
-#navigation li {
-    display: inline-block;
-    height: 45px;
-    padding: 5px 10px;
-    transition: all 1s ease 0s;
-}
-#navigation li:hover::before { content: "\5B"; left: -20px; }  
-#navigation li:hover::after { content: "\5D"; right: -20px; }  
-#navigation li a {
-    color: #07A4D3;
-    text-decoration: none;
-}
-#navigation li a:hover{color: green;}
+
+
