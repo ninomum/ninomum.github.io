@@ -9,8 +9,27 @@
 
 <script type="text/javascript">
 	$(document).ready(function(e) {
-		//首页轮播
-        xlc.tabList ("#js_diannao" , "mouseover" , "focus" , true , 3000);
+		var curIndex=0;
+		var timeInterval=2000;
+		var arr=new Array();
+		arr[0]="l_1.jpg";
+		arr[1]="l_2.jpg";
+		arr[2]="l_3.jpg";
+
+		setInterval(changeImg,timeInterval);
+		function changeImg()
+		{
+			var obj=document.getElementById("showpic");
+			if (curIndex==arr.length-1)
+			{
+				curIndex=0;
+			}
+			else
+			{
+				curIndex+=1;
+			}
+			obj.src="images/index/"+arr[curIndex];
+		}
     });
 </script>
 
@@ -58,17 +77,8 @@
 
 <div class="container container_geban">
 	<div class="container container_indexmain">
-    	<div class="diannao js_diannao">
-        	<ul class="lunbo">
-            	<li style="background-image:url(images/index/l_1.jpg)"></li>
-                <li style="background-image:url(images/index/l_2.jpg)"></li>
-                <li style="background-image:url(images/index/l_3.jpg)"></li>
-            </ul>
-            <ul class="lunbo_tip">
-            	<li class="focus"></li>
-                <li></li>
-                <li></li>
-            </ul>
+    	<div class="diannao">
+			<img class="lunbo" src="images/index/l_1.jpg" id="showpic" /> 
             <img src="images/index/diannao.png" width="417" height="305" />
         </div>
     </div>

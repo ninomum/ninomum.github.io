@@ -24,15 +24,9 @@ body{background:url(../images/bg_body.png) left top repeat-x #f0f0f0}
 .diannao{position:absolute;left:50%;margin-left:-210px;bottom:52px;}
 
 /*首页轮播*/
-.lunbo_tip , .lunbo , .lunbo li , .lunbo li a{width:349px;height:197px;}
-.lunbo ,  .lunbo_tip {position:absolute;z-index:1;left:34px;}
-.lunbo{top:16px;}
-.lunbo li {position:absolute;left:0;top:0;text-align:center;overflow:hidden;}
+.lunbo {position:absolute;left:34px;top:16px;}
 
-.lunbo_tip{bottom:95px;height:0px;z-index:3}
-.lunbo_tip , .lunbo_tip li{text-align:center;}
-.lunbo_tip li{display:inline-block;width:8px ;height:8px;background:#fff;border-radius:100px;cursor:pointer;background-position:center center;background-repeat:no-repeat;}
-.lunbo_tip .focus{background:#ff8b00;}
+
 
 
 @keyframes choose
