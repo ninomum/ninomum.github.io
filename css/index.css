@@ -23,7 +23,10 @@
   background-position:center;
   /*margin:-100px 0 0 -100px;*/ /* is width and height divided by two */
   }
-  
+
+.carousel {
+	margin-bottom:50px;
+}
 
 .carousel .item{
 	height:750px;
@@ -31,4 +34,14 @@
 
 .carousel .highlight {
 	color: #0000CD;
+}
+
+.carousel-caption  p {
+	margin-bottom:20px;
+	font-size:20px;
+	line-height:1.8;
+}
+
+#nino-container .col-md-4{
+	text-align:center;
 }
