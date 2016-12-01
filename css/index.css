@@ -24,10 +24,11 @@
   /*margin:-100px 0 0 -100px;*/ /* is width and height divided by two */
   }
   
-.slider{
-	height: 750px;
+
+.carousel .item{
+	height:750px;
 }
 
-.highlight {
+.carousel .highlight {
 	color: #0000CD;
 }
