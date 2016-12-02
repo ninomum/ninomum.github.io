@@ -1,3 +1,7 @@
+body {
+  margin-top: 50px;
+}
+
 /*--------------------------
 --------- PRELOADER --------
 --------------------------*/
@@ -40,6 +44,22 @@
 	margin-bottom:20px;
 	font-size:20px;
 	line-height:1.8;
+}
+
+#myCarousel .carousel-indicators  li {
+	border: 1px solid #3A5FCD;
+}
+
+#myCarousel .carousel-indicators .active {
+	background-color: #87CEFF;
+}
+
+#myCarousel .carousel-inner p,h1   {
+	color:#000;
+}
+
+#myCarousel .carousel-inner img  {
+  margin-top:50px;
 }
 
 #nino-container .col-md-4{
