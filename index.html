@@ -33,6 +33,15 @@ $('#myGZH').on('hidden.bs.modal', function () {
 	{gongzhonghao();}
 })
 
+
+
+$("#nino-navbar-collapse .dropdown-menu a").click(function(){
+var href=$(this).attr("href");
+
+$("#myTab a[href='" + href + "']").tab("show");
+//$("#myTab a:last").tab("show");
+})
+
 setTimeout(function(){
 	$('#preloader').css('display','none');	
 },1000);
@@ -95,6 +104,16 @@ setTimeout(function(){
                     <li><a href="#">2</a></li>
                     <li class="divider"></li>
                     <li><a href="#">3</a></li>
+                </ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">nino的一切<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#world">nino的世界</a></li>
+                    <li><a href="#dream">nino的梦想</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#desire1">nino的愿望1</a></li>
+                    <li><a href="#desire2">nino的愿望2</a></li>
                 </ul>
             </li>
 			<li><a href="#" data-toggle="modal" data-target="#ninoModal">关于</a></li>
@@ -189,21 +208,21 @@ setTimeout(function(){
 
 <ul id="myTab" class="nav nav-tabs">
 	<li class="active">
-		<a href="#home" data-toggle="tab">nino的世界</a>
+		<a href="#world" data-toggle="tab">nino的世界</a>
 	</li>
-	<li><a href="#ios" data-toggle="tab">nino的梦想</a></li>
+	<li><a href="#dream" data-toggle="tab">nino的梦想</a></li>
 	<li class="dropdown">
 		<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">nino的愿望 
 			<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-			<li><a href="#jmeter" tabindex="-1" data-toggle="tab">天天开心</a></li>
-			<li><a href="#ejb" tabindex="-1" data-toggle="tab">永远健康</a></li>
+			<li><a href="#desire1" tabindex="-1" data-toggle="tab">天天开心</a></li>
+			<li><a href="#desire2" tabindex="-1" data-toggle="tab">永远健康</a></li>
 		</ul>
 	</li>
 </ul>
 <div id="myTabContent" class="tab-content">
-	<div class="tab-pane fade in active" id="home">
+	<div class="tab-pane fade in active" id="world">
 		<div class="col-md-7">
 			<h2>世界</h2>
 			<p>nino的世界就是每天吃吃吃</p>
@@ -212,7 +231,7 @@ setTimeout(function(){
 			<img class="img-circle center-block" src="image/index/111.jpg" alt="nino">
 		</div>
 	</div>
-	<div class="tab-pane fade" id="ios">
+	<div class="tab-pane fade" id="dream">
 		<div class="col-md-7">
 			<h2>梦想</h2>
 			<p>nino的梦想也是每天吃吃吃</p>
@@ -221,7 +240,7 @@ setTimeout(function(){
 			<img class="img-circle center-block" src="image/index/222.jpg" alt="nino">
 		</div>
 	</div>
-	<div class="tab-pane fade" id="jmeter">
+	<div class="tab-pane fade" id="desire1">
 		<div class="col-md-7">
 			<h2>愿望</h2>
 			<p>nino的愿望就是每天都有好吃的</p>
@@ -230,7 +249,7 @@ setTimeout(function(){
 			<img class="img-circle center-block" src="image/index/333.jpg" alt="nino">
 		</div>
 	</div>
-	<div class="tab-pane fade" id="ejb">
+	<div class="tab-pane fade" id="desire2">
 		<div class="col-md-7">
 			<h2>世界</h2>
 			<p>nino的愿望就是每天都有分享</p>
