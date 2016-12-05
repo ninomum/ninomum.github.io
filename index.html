@@ -6,6 +6,38 @@
 <title>nino的家</title>
 <link href="package/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
+
+<script>
+window.onload = function() { 
+var myGZH_flag=0;
+function gongzhonghao(){
+	$("#myGZH").modal('show');
+}
+ 
+$('#myGZH').on('hide.bs.modal', function () {
+	var r=confirm('已经添加微信公众号了吗？(*^__^*) 嘻嘻……');
+	if (r==true)
+	{
+		alert("谢谢!爱你哦~~");
+		myGZH_flag=0;
+	}
+	else
+	{
+		alert("加一下吧，真的很好玩的");
+		myGZH_flag=1;
+	}
+})
+
+$('#myGZH').on('hidden.bs.modal', function () {
+	if(myGZH_flag==1)
+	{gongzhonghao();}
+})
+
+setTimeout(function(){
+	$('#preloader').css('display','none');	
+},1000);
+};
+</script>
 </head>
 <body>
 <div style='position:fixed;top:12%;left:95%;z-index:10000;'>
@@ -65,12 +97,35 @@
                     <li><a href="#">3</a></li>
                 </ul>
             </li>
+			<li><a href="#" data-toggle="modal" data-target="#ninoModal">关于</a></li>
         </ul>
     </div>
     </div>
 </nav>
 
-<div id="myCarousel" class="carousel slide">
+<div class="modal fade" id="ninoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					关于nino的家
+				</h4>
+			</div>
+			<div class="modal-body">
+				这里是nino的家，有爱，有笑，有欢乐
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div id="myCarousel" class="carousel slide" >
 	<!-- 轮播（Carousel）指标 -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -187,43 +242,16 @@
 </div>
 	<p>&nbsp;</p>
 <hr>
+
+
+<footer>
+	<p class="pull-right"><a herf="#top">回到顶部</a></p>
+	<p>&copy; 2016年12月5月 妈妈特别爱nino</p>
+</footer>
+
 </div> 
-
-
 
 <script type="text/javascript" src="package/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="package/bootstrap-3.3.7/js/bootstrap.js"></script>
-<script>
-
-var myGZH_flag=0;
-function gongzhonghao(){
-	$("#myGZH").modal('show');
-}
- 
-$('#myGZH').on('hide.bs.modal', function () {
-	var r=confirm('已经添加微信公众号了吗？(*^__^*) 嘻嘻……');
-	if (r==true)
-	{
-		alert("谢谢!爱你哦~~");
-		myGZH_flag=0;
-	}
-	else
-	{
-		alert("加一下吧，真的很好玩的");
-		myGZH_flag=1;
-	}
-})
-
-$('#myGZH').on('hidden.bs.modal', function () {
-	if(myGZH_flag==1)
-	{gongzhonghao();}
-})
-
-setTimeout(function(){
-	$('#preloader').css('display','none');	
-},1000);
-
-
-</script>
 </body>
 </html>

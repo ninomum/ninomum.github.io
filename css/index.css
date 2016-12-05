@@ -1,5 +1,6 @@
 body {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*--------------------------
@@ -46,6 +47,13 @@ body {
 	line-height:1.8;
 }
 
+#myCarousel {
+  background: -webkit-linear-gradient(left top, #fff, #FCFCFC); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom right, #fff, #FCFCFC); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom right, #fff, #FCFCFC); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom right, #fff, #FCFCFC); /* 标准的语法 */
+}
+
 #myCarousel .carousel-indicators  li {
 	border: 1px solid #3A5FCD;
 }
@@ -56,6 +64,7 @@ body {
 
 #myCarousel .carousel-inner p,h1   {
 	color:#000;
+	text-shadow: none;
 }
 
 #myCarousel .carousel-inner img  {
