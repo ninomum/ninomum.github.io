@@ -33,13 +33,9 @@ $('#myGZH').on('hidden.bs.modal', function () {
 	{gongzhonghao();}
 })
 
-
-
 $("#nino-navbar-collapse .dropdown-menu a").click(function(){
-var href=$(this).attr("href");
-
-$("#myTab a[href='" + href + "']").tab("show");
-//$("#myTab a:last").tab("show");
+	var href=$(this).attr("href");
+	$("#myTab a[href='" + href + "']").tab("show");
 })
 
 setTimeout(function(){
