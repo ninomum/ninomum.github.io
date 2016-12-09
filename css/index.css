@@ -2,13 +2,22 @@ body {
   margin-bottom: 50px;
 }
 
-.not-visible-nav {
-	top: -52px;
+.add-bottom {
+	padding-bottom: 30px;
+}
+
+.add-top {
+	padding-top: 30px;
 }
 
 /*--------------------------
 --------- PRELOADER --------
 --------------------------*/
+
+.not-visible-nav {
+	top: -52px;
+}
+
 #preloader {
 	position: fixed;
 	top: 0;
@@ -77,4 +86,42 @@ body {
 #nino-container .col-md-4{
 	text-align:center;
 }
+
+
+/*--------------------------
+---------- ABOUT -----------
+--------------------------*/
+.divider {
+	background: url(../image/index/divider.png) center top no-repeat;
+	height: 5px;
+	margin-top: 5px;
+}
+
+.about h2 {
+	font-weight: 600;
+	font-size: 3.5em;
+	text-align: center;
+	color: #888888;
+}
+
+.about h2 span {
+	display: block;
+	font-size: 40%;
+	font-weight: 300;
+	color: #888888;
+}
+
+#ninoabout .list {
+	padding: 20px 10px;
+	text-align:left;
+}
+
+#ninoabout .list h5 {
+	font-weight: 900;
+	font-size: 1.2em;
+	color: #c0c0c0;
+}
+
+
+
 
