@@ -1,4 +1,17 @@
-﻿
+﻿var menu = $('.navbar');
+$(window).scroll(function () {
+	var y = $(this).scrollTop();
+	var z = $('.carousel-indicators').offset().top-400;
+
+	if (y >= z) {
+		menu.removeClass('not-visible-nav');
+	}
+	else{
+		menu.addClass('not-visible-nav');
+	}
+});
+
+
 var myGZH_flag=0;
 function gongzhonghao(){
 	$("#myGZH").modal('show');
@@ -30,7 +43,6 @@ $("#nino-navbar-collapse .dropdown-menu a").click(function(){
 
 setTimeout(function(){
 	$('#preloader').css('display','none');	
-	$('.navbar').css('display','block');
 },1000);
 
 $('body').scrollspy({ 

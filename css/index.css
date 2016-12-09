@@ -1,6 +1,9 @@
 body {
-  margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.not-visible-nav {
+	top: -52px;
 }
 
 /*--------------------------
@@ -74,3 +77,4 @@ body {
 #nino-container .col-md-4{
 	text-align:center;
 }
+
