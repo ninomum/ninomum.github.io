@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin-top:0;
+				margin-bottom: 0;
+			}
+			
+			#heart{
+				position: relative;
+				width: 400px;
+				height: 320px;
+			}
+			#heart:before,#heart:after{
+				position: absolute;
+				content: '';
+				left: 200px;
+				top:15px;
+				width: 200px;
+				height: 300px;
+				background: #f00;
+				border-radius: 100px 100px 0 0;
+				transform: rotate(-45deg);
+				transform-origin: 0 100%;
+			}		
+			#heart:after{
+				left: 0;
+				transform: rotate(45deg);
+				transform-origin: 100% 100%;
+			}
+
+			
+			#heart-sm{
+				position: relative;
+				width: 100px;
+				height: 90px;
+				float:left;
+			}
+			#heart-sm:before,
+			#heart-sm:after{
+				position: absolute;
+				content: '';
+				left: 50px;
+				top: 0;
+				width: 50px;
+				height: 80px;
+				background: #f00;
+				border-radius: 50px 50px 0 0;
+				transform: rotate(-45deg);
+				transform-origin: 0 100%;
+			}
+			
+			#heart-sm:after{
+				left: 0;
+				transform: rotate(45deg);
+				transform-origin: 100% 100%;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<div id="heart"></div>
+		<div id="heart-sm"></div>
+		<div id="heart-sm" style="margin-left:210px;"></div>
+	</body>
+</html>
