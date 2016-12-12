@@ -122,6 +122,19 @@ body {
 	color: #c0c0c0;
 }
 
+/*--------------------------
+---------- category -----------
+--------------------------*/
 
+#category  ul {
+	float: left;
+    padding: 7px 0;
+
+}
+#category  li {
+    float: left;
+    line-height: 22px;
+    margin-right: 25px;
+}
 
 
